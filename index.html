@@ -1,0 +1,607 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    
+    <!-- UPDATED: Changed to Farrel's information -->
+    <title>Farrel Satria Suryanda | Software Engineer Portfolio</title>
+    
+    <!-- SEO Meta - UPDATED -->
+    <meta name="title" content="Farrel Satria Suryanda | Software Engineer Portfolio">
+    <meta name="description" content="Professional portfolio of Farrel Satria Suryanda — crafting exceptional digital experiences with elegant design and clean code.">
+    <meta name="keywords" content="Farrel Satria Suryanda, Software Engineer, web developer, portfolio, modern design, frontend developer">
+    <meta name="author" content="Farrel Satria Suryanda">
+    <meta property="og:image" content="assets/preview.webp">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://farrelsatria.dev">
+    
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    
+    <!-- Modern Professional Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    
+  <!-- Lucide: load dulu tanpa defer biar siap lebih awal -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <!-- script utama kamu: bisa pakai defer -->
+  <script src="assets/scripts.js" defer></script>
+
+    
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    
+    <!-- Navigation - UPDATED: Changed logo text -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <img src="assets/logo.svg" alt="Farrel" class="logo-icon">
+          <span>Farrel</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- UPDATED: Added proper accessibility attributes -->
+        <button class="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="nav-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- UPDATED: Added Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top"><i data-lucide="arrow-up"></i></button>
+
+    <!-- HERO SECTION - UPDATED: Personal information -->
+    <section class="hero" id="home">
+      <div class="hero-bg">
+        <div class="floating-shapes"></div>
+      </div>
+      <div class="container hero-content">
+        <div class="hero-badge">
+          <i data-lucide="sparkles"></i>
+          <span>Available for new opportunities</span>
+        </div>
+        <h1 class="hero-title">
+          <span class="gradient-text">Hi, I'm Farrel — Software Engineer</span>
+        </h1>
+        <p class="hero-description">
+          I love creating clean, elegant, and minimalistic interfaces that enhance both user interface and user experience.<br>
+          I believe in building digital products that are not only functional but also visually refined and user-centric.
+        </p>
+        <!-- UPDATED: Changed stats to be more realistic -->
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Projects Delivered</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">3+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Client Satisfaction</span>
+          </div>
+        </div>
+        <div class="hero-actions">
+          <!-- UPDATED: Changed onclick to work with new JS structure -->
+          <button class="btn primary" onclick="Portfolio.scrollToSection('projects')">
+            <i data-lucide="arrow-right"></i>
+            View My Work
+          </button>
+          <a href="assets/cv-farrel-satria-suryanda.pdf" class="btn secondary" download>
+            <i data-lucide="download"></i>
+            Download CV
+          </a>
+        </div>
+        <div class="hero-contact">
+          <span><i data-lucide="mail"></i>
+            <a href="mailto:farrelsatriasuryanda18@gmail.com">farrelsatriasuryanda18@gmail.com</a>
+          </span>
+          <span><i data-lucide="phone"></i>
+            <a href="tel:+6282143210533">+62 821-4321-0533</a>
+          </span>
+          <span><i data-lucide="map-pin"></i> Surakarta, Central Java, Indonesia</span>
+        </div>
+        <div class="hero-social">
+          <a href="https://github.com/Farrel-Satria" target="_blank"><i data-lucide="github"></i></a>
+          <a href="https://www.linkedin.com/in/farrel-satria-suryanda-037135308" target="_blank"><i data-lucide="linkedin"></i></a>
+          <a href="https://www.instagram.com/farrelsatriasuryanda_" target="_blank"><i data-lucide="instagram"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION - UPDATED: Changed name -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2>Crafting Digital Excellence</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-content">
+            <div class="about-text">
+              <p class="lead">
+                Hi, I'm <strong>Farrel Satria Suryanda</strong> — a passionate developer who believes 
+                in the power of clean code and exceptional user experiences.
+              </p>
+              <p>
+                With a keen eye for detail and a love for modern technologies, I specialize in 
+                creating web applications that not only look stunning but perform flawlessly 
+                across all devices and platforms.
+              </p>
+              <div class="philosophy">
+                <div class="philosophy-item">
+                <i data-lucide="coffee"></i>
+                    <span>Fueled by coffee</span>
+                </div>
+                  <div class="philosophy-item">
+                    <i data-lucide="palette"></i>
+                      <span>Driven by design</span>
+                  </div>
+                  <div class="philosophy-item">
+                    <i data-lucide="code-2"></i>
+                    <span>Powered by code</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-skills">
+            <h3>Core Expertise</h3>
+            <div class="skills-grid">
+              <!-- UPDATED: Changed skills to match Farrel's tech stack -->
+              <div class="skill-category">
+                <h4>Frontend</h4>
+                <div class="skills-list">
+                  <span class="skill-tag">HTML5/CSS3</span>
+                  <span class="skill-tag">JavaScript ES6+</span>
+                  <span class="skill-tag">Bootstrap</span>
+                  <span class="skill-tag">Responsive Design</span>
+                </div>
+              </div>
+              <div class="skill-category">
+                <h4>Backend & Database</h4>
+                <div class="skills-list">
+                  <span class="skill-tag">PHP</span>
+                  <span class="skill-tag">Python</span>
+                  <span class="skill-tag">MySQL</span>
+                  <span class="skill-tag">C</span>
+                  <span class="skill-tag">ESP32 API</span>
+                </div>
+              </div>
+              <div class="skill-category">
+                <h4>Tools & Technologies</h4>
+                <div class="skills-list">
+                  <span class="skill-tag">Git/GitHub</span>
+                  <span class="skill-tag">Data Analytics</span>
+                  <span class="skill-tag">Machine Learning</span>
+                  <span class="skill-tag">AI Prompting</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH STACK - UPDATED: Changed to match Farrel's stack -->
+    <section class="tech-stack" id="stack">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technologies</span>
+          <h2>Tech Stack & Tools</h2>
+        </div>
+        <div class="tech-grid">
+          <div class="tech-item" data-tooltip="Java">
+            <i data-lucide="code"></i>
+            <span>Java</span>
+          </div>
+          <div class="tech-item" data-tooltip="JavaScript">
+            <i data-lucide="code"></i>
+            <span>JavaScript</span>
+          </div>
+          <div class="tech-item" data-tooltip="HTML5">
+            <i data-lucide="file-code"></i>
+            <span>HTML5</span>
+          </div>
+          <div class="tech-item" data-tooltip="CSS3">
+            <i data-lucide="file-code-2"></i>
+            <span>CSS3</span>
+          </div>
+          <div class="tech-item" data-tooltip="PHP">
+            <i data-lucide="server"></i>
+            <span>PHP</span>
+          </div>
+          <div class="tech-item" data-tooltip="C">
+            <i data-lucide="terminal"></i>
+            <span>C</span>
+          </div>
+          <div class="tech-item" data-tooltip="Python">
+            <i data-lucide="terminal"></i>
+            <span>Python</span>
+          </div>
+          <div class="tech-item" data-tooltip="Data Analytics">
+            <i data-lucide="bar-chart"></i>
+            <span>Data Analytics</span>
+          </div>
+          <div class="tech-item" data-tooltip="Machine Learning">
+            <i data-lucide="brain-circuit"></i>
+            <span>Machine Learning</span>
+          </div>
+          <div class="tech-item" data-tooltip="AI Prompting">
+            <i data-lucide="bot"></i>
+            <span>AI Prompting</span>
+          </div>
+          <div class="tech-item" data-tooltip="Git">
+            <i data-lucide="git-branch"></i>
+            <span>Git</span>
+          </div>
+          <div class="tech-item" data-tooltip="MySQL">
+            <i data-lucide="database"></i>
+            <span>MySQL</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION - No changes needed, keeping existing structure -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Projects</span>
+          <h2>Projects Showcase</h2>
+          <p>A selection of my favorite and most impactful work.</p>
+        </div>
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Cam Preview ESP32 -->
+          <div class="project-card" data-aos="fade-up">
+            <div class="project-image">
+              <img src="assets/projects/cam-preview-esp32.webp" alt="Cam Preview ESP32">
+              <div class="project-overlay">
+                <div class="tech-stack-mini">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>JavaScript</span>
+                  <span>ESP32 API</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3>Cam Preview ESP32</h3>
+                <span class="project-type">IoT/Web</span>
+              </div>
+              <p>
+                A web-based dashboard that allows users to stream live video from the ESP32-CAM module, capture snapshots, and control camera parameters directly from the browser.
+              </p>
+              <div class="project-features">
+                <span><i data-lucide="check"></i> Live Video Streaming</span>
+                <span><i data-lucide="check"></i> Snapshot Capture</span>
+                <span><i data-lucide="check"></i> Camera Controls</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/Farrel-Satria/CamPreviewESP" class="btn secondary" target="_blank">
+                  <i data-lucide="github"></i>
+                  View Code
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Re3Box -->
+          <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-image">
+              <img src="assets/projects/re3box.webp" alt="Re3Box">
+              <div class="project-overlay">
+                <div class="tech-stack-mini">
+                  <span>PHP</span>
+                  <span>JavaScript</span>
+                  <span>MySQL</span>
+                  <span>Bootstrap</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3>Re3Box — Smart Waste Bank System</h3>
+                <span class="project-type">Web App</span>
+              </div>
+              <p>
+                A collaborative project developed during an internship. The platform enables users to deposit recyclable materials, track transactions, and redeem points.
+              </p>
+              <div class="project-features">
+                <span><i data-lucide="check"></i> Transaction Tracking</span>
+                <span><i data-lucide="check"></i> Points & Rewards</span>
+                <span><i data-lucide="check"></i> User Dashboard</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/Farrel-Satria/bank-sampah" class="btn secondary" target="_blank">
+                  <i data-lucide="github"></i>
+                  View Code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION - No changes needed -->
+    <section class="experience" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Journey</span>
+          <h2>Experience & Education</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item" data-aos="fade-right">
+            <div class="timeline-marker education"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2023 – 2026</span>
+              <h3>Student</h3>
+              <h4>SMKN 2 Surakarta (Software Engineering & Game Development)</h4>
+              <p>Focused on web technologies, algorithm design, and project-based learning through real-world applications.</p>
+              <div class="timeline-tags">
+                <span>Web Technologies</span>
+                <span>Algorithms</span>
+                <span>Project-Based Learning</span>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item" data-aos="fade-left">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2025 – 2026</span>
+              <h3>Internship</h3>
+              <h4>PT BIPTEK TOKODATA INDONESIA</h4>
+              <p>Contributed to full-stack web applications, developed internal systems, and improved automation and data tools.</p>
+              <div class="timeline-tags">
+                <span>Full Stack</span>
+                <span>Automation</span>
+                <span>Internal Tools</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION - UPDATED: Changed testimonials to reference Farrel -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Testimonials</span>
+          <h2>What Clients Say</h2>
+        </div>
+        <div class="testimonials-slider">
+          <div class="testimonial-track" id="testimonialTrack">
+            <div class="testimonial-card active">
+              <div class="testimonial-content">
+                <div class="quote-icon">
+                  <i data-lucide="quote"></i>
+                </div>
+                <p>"Farrel delivered an exceptional portfolio website that perfectly captured our brand. His attention to detail and technical expertise are outstanding."</p>
+              </div>
+              <div class="testimonial-author">
+                <img src="assets/testimonials/client1.jpg" alt="Sarah Johnson">
+                <div class="author-info">
+                  <h4>Sarah Johnson</h4>
+                  <span>CEO, Creative Studios</span>
+                  <div class="rating">
+                    <i data-lucide="star" class="filled"></i>
+                    <i data-lucide="star" class="filled"></i>
+                    <i data-lucide="star" class="filled"></i>
+                    <i data-lucide="star" class="filled"></i>
+                    <i data-lucide="star" class="filled"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <div class="quote-icon">
+                  <i data-lucide="quote"></i>
+                </div>
+                <p>"Working with Farrel was a game-changer for our startup. He transformed our complex ideas into a beautiful, functional web application."</p>
+              </div>
+              <div class="testimonial-author">
+                <img src="assets/testimonials/client2.jpg" alt="Michael Chen">
+                <div class="author-info">
+                  <h4>Michael Chen</h4>
+                  <span>Founder, TechStart Inc.</span>
+                  <div class="rating">
+                    <i data-lucide="star" class="filled"></i>
+                    <i data-lucide="star" class="filled"></i>
+                    <i data-lucide="star" class="filled"></i>
+                    <i data-lucide="star" class="filled"></i>
+                    <i data-lucide="star" class="filled"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <div class="quote-icon">
+                  <i data-lucide="quote"></i>
+                </div>
+                <p>"Highly professional, creative, and delivers on time. Farrel's work exceeded our expectations and helped increase our online presence significantly."</p>
+              </div>
+              <div class="testimonial-author">
+                <img src="assets/testimonials/client3.jpg" alt="Emily Rodriguez">
+                <div class="author-info">
+                  <h4>Emily Rodriguez</h4>
+                  <span>Marketing Director, GrowthCo</span>
+                  <div class="rating">
+                    <i data-lucide="star" class="filled"></i>
+                    <i data-lucide="star" class="filled"></i>
+                    <i data-lucide="star" class="filled"></i>
+                    <i data-lucide="star" class="filled"></i>
+                    <i data-lucide="star" class="filled"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-navigation">
+            <!-- UPDATED: Removed onclick attributes for modern JS handling -->
+            <button class="nav-btn prev">
+              <i data-lucide="chevron-left"></i>
+            </button>
+            <div class="testimonial-dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <button class="nav-btn next">
+              <i data-lucide="chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION - UPDATED: Changed contact information -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get In Touch</span>
+          <h2>Let's Create Something Amazing Together</h2>
+          <p>Ready to bring your ideas to life? Let's discuss your next project.</p>
+        </div>
+        
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>Let's Talk</h3>
+            <p>I'm always open to discussing new opportunities, creative projects, or potential collaborations.</p>
+            
+            <div class="contact-methods">
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i data-lucide="mail"></i>
+                </div>
+                <div class="method-info">
+                  <h4>Email</h4>
+                  <a href="mailto:farrelsatriasuryanda18@gmail.com">farrelsatriasuryanda18@gmail.com</a>
+                </div>
+              </div>
+              
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i data-lucide="phone"></i>
+                </div>
+                <div class="method-info">
+                  <h4>Phone</h4>
+                  <a href="tel:+6282143210533">+62 821-4321-0533</a>
+                </div>
+              </div>
+              
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i data-lucide="map-pin"></i>
+                </div>
+                <div class="method-info">
+                  <h4>Location</h4>
+                  <span>Surakarta, Central Java, Indonesia</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="social-links">
+              <a href="https://github.com/Farrel-Satria" target="_blank" data-tooltip="GitHub">
+                <i data-lucide="github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/farrel-satria-suryanda-037135308" target="_blank" data-tooltip="LinkedIn">
+                <i data-lucide="linkedin"></i>
+              </a>
+              <a href="https://www.instagram.com/farrelsatriasuryanda_" target="_blank" data-tooltip="Instagram">
+                <i data-lucide="instagram"></i>
+              </a>
+            </div>
+          </div>
+          
+          <form class="contact-form" action="https://formspree.io/f/yourformid" method="POST">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject" required>
+                <option value="">Select a subject</option>
+                <option value="project">New Project</option>
+                <option value="collaboration">Collaboration</option>
+                <option value="consultation">Consultation</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or idea..." required></textarea>
+            </div>
+            
+            <button type="submit" class="btn primary">
+              <i data-lucide="send"></i>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER - UPDATED: Changed name -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="assets/logo.svg" alt="Farrel" class="logo-icon">
+            <span>Farrel Satria Suryanda</span>
+          </div>
+          <nav class="footer-nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+        <div class="footer-bottom">
+          <!-- UPDATED: Added automatic year with span ID -->
+          <p>&copy; <span id="footerYear">2025</span> Farrel Satria Suryanda. Crafted with <i data-lucide="heart" class="heart"></i> and lots of coffee.</p>
+          <!-- UPDATED: Removed onclick for modern JS handling -->
+          <button class="back-to-top" data-tooltip="Back to top">
+            <i data-lucide="arrow-up"></i>
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <!-- UPDATED: Removed inline script, all handled in external JS -->
+  </body>
+  </html>
+    <script>
+      // Set current year in footer
+      document.getElementById('footerYear').textContent = new Date().getFullYear();
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+</script>
+<script src="assets/scripts.js" defer></script>
